@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  color: #000000;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.search button:hover {
+  background-color: #ff3b2f;
+}
+
+.main {
+  margin-top: 20px;
+  display: none;
+}
+
+.temp {
+  font-size: 48px; 
+  margin: 10px 0;
+}
+
+.city {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+}
+
+.humidity, .wind {
+  display: flex;
+  align-items: center;
+}
+
+.humid-icon, .wind-icon {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.humid-content h1, .wind-content h1 {
+  font-size: 20px; 
+}
+
+.humid-content h3, .wind-content h3 {
+  font-size: 24px; 
+}
+
